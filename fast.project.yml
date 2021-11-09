@@ -1,0 +1,11 @@
+include:
+  - project.yml
+targets:
+  App:
+    settings:
+      base:
+        OTHER_SWIFT_FLAGS: "-DFAST_ASSETS"
+    sources:REPLACE:
+      - "Targets/App/Sources"
+      - path: "Targets/App/Resources/Assets.xcassets"
+        buildPhase: none

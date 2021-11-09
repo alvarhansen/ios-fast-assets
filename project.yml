@@ -1,0 +1,20 @@
+name: FastAssets
+options:
+  bundleIdPrefix: com.example
+targets:
+  App:
+    type: application
+    platform: iOS
+    deploymentTarget: "11.4"
+    info:
+      path: Info.plist
+      properties:
+        LSRequiresIPhoneOS: true
+        UILaunchStoryboardName: none
+    settings:
+      base:
+        ASSETCATALOG_COMPILER_APPICON_NAME: []
+    sources: 
+      - "Targets/App/Sources"
+      - path: "Targets/App/Resources/Assets.xcassets"
+        buildPhase: resources

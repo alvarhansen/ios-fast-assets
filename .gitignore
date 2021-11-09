@@ -1,0 +1,4 @@
+Info.plist
+.DS_Store
+*.xcodeproj
+.tools/
